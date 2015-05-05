@@ -1,0 +1,15 @@
+17:53:45 **** Incremental Build of configuration Debug for project remove duplicated linked list 2 ****
+make all 
+Building file: ../src/remove duplicated linked list 2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/remove duplicated linked list 2.d" -MT"src/remove\ duplicated\ linked\ list\ 2.d" -o "src/remove duplicated linked list 2.o" "../src/remove duplicated linked list 2.cpp"
+Finished building: ../src/remove duplicated linked list 2.cpp
+ 
+Building target: remove duplicated linked list 2
+Invoking: MacOS X C++ Linker
+g++  -o "remove duplicated linked list 2"  ./src/remove\ duplicated\ linked\ list\ 2.o   
+Finished building target: remove duplicated linked list 2
+ 
+
+17:53:46 Build Finished (took 1s.93ms)
+

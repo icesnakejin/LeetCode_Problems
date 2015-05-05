@@ -1,0 +1,15 @@
+18:22:42 **** Incremental Build of configuration Debug for project Triangle ****
+make all 
+Building file: ../src/Triangle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Triangle.d" -MT"src/Triangle.d" -o "src/Triangle.o" "../src/Triangle.cpp"
+Finished building: ../src/Triangle.cpp
+ 
+Building target: Triangle
+Invoking: MacOS X C++ Linker
+g++  -o "Triangle"  ./src/Triangle.o   
+Finished building target: Triangle
+ 
+
+18:22:43 Build Finished (took 563ms)
+

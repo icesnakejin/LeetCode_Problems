@@ -1,0 +1,15 @@
+11:58:25 **** Build of configuration Debug for project Reorder Linkedlist ****
+make all 
+Building file: ../src/Reorder Linkedlist.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Reorder Linkedlist.d" -MT"src/Reorder\ Linkedlist.d" -o "src/Reorder Linkedlist.o" "../src/Reorder Linkedlist.cpp"
+Finished building: ../src/Reorder Linkedlist.cpp
+ 
+Building target: Reorder Linkedlist
+Invoking: MacOS X C++ Linker
+g++  -o "Reorder Linkedlist"  ./src/Reorder\ Linkedlist.o   
+Finished building target: Reorder Linkedlist
+ 
+11:58:38 **** Incremental Build of configuration Debug for project Reorder Linkedlist ****
+make all 
+make: Nothing to be done for `all'.

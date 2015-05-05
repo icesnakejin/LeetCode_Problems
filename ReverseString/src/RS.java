@@ -1,0 +1,29 @@
+
+public class RS {
+
+	public static void main(String[] args) {
+		String input = " 1";
+		String result = new Solution().reverseWords(input);
+		System.out.println(result);
+
+	}
+
+}
+
+class Solution {
+    public String reverseWords(String s) {
+        String[] words = s.split(" ");
+        if (s == null || s.length() == 0) return "";
+        s = "";
+        for (int i = words.length - 1 ; i >= 0 ; -- i) {
+        	System.out.println(words[i]);
+            if (words[i].equals("")) continue;
+            s += words[i];
+            if (i != 0) {
+            	System.out.println("gotta");
+            	s += " ";
+            }
+        }
+        return s.length() == 0 ? "" : s;
+    }
+}

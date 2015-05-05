@@ -1,0 +1,135 @@
+class ListNode {
+      int val;
+     ListNode next;
+     ListNode(int x) {
+         val = x;
+         next = null;
+      }
+  }
+
+public class reorderList {
+	
+	public static void main(String[] args) {
+		ListNode head = new ListNode(1);
+		ListNode a = new ListNode(2);
+		ListNode b = new ListNode(3);
+		ListNode c = new ListNode(4);
+		ListNode d = new ListNode(5);
+		
+		head.next = a;
+		a.next = b;
+//		b.next = c;
+//		c.next = d;
+//		d.next = null;
+		
+		ListNode head1 = new ListNode(6);
+		ListNode a1 = new ListNode(7);
+		ListNode b1 = new ListNode(8);
+		ListNode c1 = new ListNode(9);
+		ListNode d1 = new ListNode(10);
+		
+		head1.next = a1;
+		a1.next = b1;
+		b1.next = c1;
+		c1.next = d1;
+		d1.next = null;
+		
+		d.next = head1;
+		
+		
+		
+		new solutions().reorderList(head);
+		while (head != null) {
+			System.out.println(head.val);
+			head = head.next;
+		}
+		
+
+	}
+	
+}
+
+class solutions {
+
+	
+	
+
+	private ListNode FindMiddle(ListNode head) {
+		ListNode fast = head.next;
+		ListNode slow = head; 
+		while (fast != null && fast.next != null) {
+			fast = fast.next.next;
+			slow = slow.next;
+		}
+		return slow;
+	}
+	
+	private void Merge(ListNode head, ListNode mid) {
+		int index = 0;
+		ListNode dummy = new ListNode(0);
+		ListNode runner = dummy;
+		while (head != null || mid != null) {
+			if (index%2 == 0) {
+				if (head != null) {
+					runner.next = head;
+					head = head.next;
+				}
+			} else {
+				if (mid != null) {
+					runner.next = mid;
+					mid = mid.next;
+				}
+			}
+			runner = runner.next;
+			index ++;			
+		}
+		head = dummy.next;
+	}
+	
+	private ListNode Reverse(ListNode head) {
+		ListNode prev = null;
+		while (head!= null) {
+			ListNode temp = head.next;
+			head.next = prev;
+			prev = head;
+			head = temp;
+		}
+		//head.next = prev;
+		return prev;
+       
+	}
+	
+	public void reorderList(ListNode head) {
+		if (head == null) return;
+        ListNode mid = FindMiddle(head);
+        ListNode reverseH = Reverse(mid.next);
+        mid.next = null;
+        ListNode dummy = new ListNode(0);
+        ListNode iter = dummy;
+        while (head != null && reverseH != null) {
+            iter.next = head;
+            iter = iter.next;
+            System.out.println(iter.val);
+            iter.next = reverseH;
+            iter = iter.next;
+            System.out.println(iter.val);
+             head = head.next;
+            reverseH = reverseH.next;
+        }
+        
+        //if (head != null) {
+            //iter.next = head;
+            //iter = iter.next;
+            //head = head.next;
+        //}
+        //iter.next = null;
+        // while (reverseH != null) {
+        //     iter.next = reverseH;
+        //     iter = iter.next;
+        //     reverseH = reverseH.next;
+        // }
+        
+        head = dummy.next;
+    }
+
+}

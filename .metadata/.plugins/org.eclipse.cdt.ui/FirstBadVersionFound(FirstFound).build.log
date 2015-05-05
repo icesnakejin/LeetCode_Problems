@@ -1,0 +1,16 @@
+16:39:02 **** Build of configuration Debug for project FirstBadVersionFound(FirstFound) ****
+make all 
+Building file: ../src/FirstBadVersionFound(FirstFound).cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FirstBadVersionFound(FirstFound).d" -MT"src/FirstBadVersionFound(FirstFound).d" -o "src/FirstBadVersionFound(FirstFound).o" "../src/FirstBadVersionFound(FirstFound).cpp"
+Finished building: ../src/FirstBadVersionFound(FirstFound).cpp
+ 
+Building target: FirstBadVersionFound
+/bin/sh: -c: line 0: syntax error near unexpected token `('
+/bin/sh: -c: line 0: `g++  -o "FirstBadVersionFound(FirstFound)"  ./src/FirstBadVersionFound(FirstFound).o   '
+make: *** [FirstBadVersionFound(FirstFound)] Error 2
+Invoking: MacOS X C++ Linker
+g++  -o "FirstBadVersionFound(FirstFound)"  ./src/FirstBadVersionFound(FirstFound).o   
+
+16:39:04 Build Finished (took 2s.377ms)
+

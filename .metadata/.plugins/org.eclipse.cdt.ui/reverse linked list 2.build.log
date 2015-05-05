@@ -1,0 +1,6 @@
+16:34:56 **** Incremental Build of configuration Debug for project reverse linked list 2 ****
+make all 
+make: Nothing to be done for `all'.
+
+16:34:56 Build Finished (took 69ms)
+

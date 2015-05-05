@@ -1,0 +1,11 @@
+16:43:46 **** Incremental Build of configuration Debug for project FirstFoundBadVersion(FirstFound) ****
+make all 
+Building target: FirstFoundBadVersion
+Invoking: MacOS X C++ Linker
+g++  -o "FirstFoundBadVersion(FirstFound)"  ./src/FirstFoundBadVersion(FirstFound).o   
+/bin/sh: -c: line 0: syntax error near unexpected token `('
+/bin/sh: -c: line 0: `g++  -o "FirstFoundBadVersion(FirstFound)"  ./src/FirstFoundBadVersion(FirstFound).o   '
+make: *** [FirstFoundBadVersion(FirstFound)] Error 2
+
+16:43:46 Build Finished (took 120ms)
+
