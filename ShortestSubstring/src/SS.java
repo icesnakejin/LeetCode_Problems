@@ -51,7 +51,7 @@ public class SS {
 	            }
 	            left ++;
 	          }
-	          left ++;
+	          left ++;// Here is the fix
 	          while (!(s.charAt(left) == 'a' || s.charAt(left) == 'b' || s.charAt(left) == 'c')) {
 	            left ++;
 	          }
