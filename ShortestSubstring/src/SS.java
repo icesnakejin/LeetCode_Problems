@@ -20,6 +20,15 @@ public class SS {
 	    System.out.println(tc3);
 	    System.out.println(tc4);
 	    System.out.println(tc5);
+	    
+	    /*
+	     * result :
+	     *  abc
+	     *
+	     *	abc
+	     *	abc
+	     *	bcxxa
+	     */
 	  }
 	  
 	  private static String shortestSubstring(String s) {
